@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>AI Test Case Generator</title></head>
+<body>
+  <h1>Generate Test Cases</h1>
+  <form action="/generate" method="post" enctype="multipart/form-data">
+    <label>Feature:</label><input type="text" name="feature" required><br>
+    <label>Test Type:</label><input type="text" name="test_type" required><br>
+    <label>Number of Test Cases:</label><input type="number" name="test_count" required><br>
+    <label>Upload Image:</label><input type="file" name="image" accept="image/*" required><br>
+    <label>Upload Template (.xlsx):</label><input type="file" name="template" accept=".xlsx" required><br>
+    <input type="submit" value="Generate">
+  </form>
+</body>
+</html>
